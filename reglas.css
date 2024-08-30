@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(252, 252, 252);
+    font-family: arial;
+    font-size: 24px;
+    margin: 150px;
+}
+
+
+h1{
+    text-align: center;
+    border: rgb(199, 110, 110) solid 4px ;
+    width: 600px;
+    display: block ;
+    margin: auto;
+    color: rgb(117, 45, 45);
+
+}
+
+#contenido{
+   border: rgb(128, 87, 240) dotted;
+}
+
+#caracter{
+    border: blue dotted;
+}
+h2{
+    color: rgb(177, 7, 7);
+    border-bottom: green solid;
+    border-top: rgb(110, 236, 110) solid;
+}
+
+#sex{
+    color: rgb(121, 82, 31);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#futbol{
+    color: rgb(10, 109, 109);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#coco{
+    color: rgb(27, 27, 226);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    border: green solid;
+    color: black;
+}
+

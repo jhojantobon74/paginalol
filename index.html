@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bordesCSS</title>
+    <link rel="stylesheet" href="reglas.css">
+</head>
+<body>
+    <h1 id=dat> Motos</h1>
+    <h2>Marcas De Motos</h2>
+    <ul id="contenido">
+        <li>Harley Davidson</li>
+        <li>Ducati</li>
+        <li>Aprilia</li>
+        <li>BMW</li>
+        <li>Yamaha</li>
+        <li>Honda</li>
+        <li>Suzuki</li>
+        <li>Kawasaki</li>
+        <li>KTM</li>
+        <li>Triumph</li>
+    </ul>
+    <h2>Descripción de la moto</h2>
+    <p>
+        Es un vehículo de dos ruedas impulsado por un motor. 
+        El cuadro y las ruedas constituyen la estructura fundamental del vehículo. 
+        La rueda directriz es la delantera y la rueda motriz es la trasera.
+        <br>
+    
+    <h3>Caracteristicas de una moto</h2>
+    <ul id="caracter">
+        <li>Son más económicas a comparación de otros vehículos </li>
+        <li>Cuenta con un menor consumo de combustible</li>
+        <li>Poseen una mayor agilidad en la conducción</li>
+        <li>Su mantenimiento es más barato si lo comparamos con un coche</li>
+        <li>Brindan una mayor libertad y movilidad en cualquier tipo de superficie</li>
+    </ul>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
